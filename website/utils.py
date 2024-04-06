@@ -9,16 +9,13 @@ import string
 
 def load_model():
     try:
-        with open('model.pkl', 'rb') as f:
-            model = pickle.load(f)
-
-        with open('vectorizer.pkl', 'rb') as f:
-            ifidf = pickle.load(f)
+        with open('pipeline.pkl', 'rb') as f:
+            pipeline = pickle.load(f)
 
     except Exception as ex:
         print(f"Exception ex:{ex} occurred in loading model")
         raise (ex)
-    return model, ifidf
+    return pipeline
 
 
 def transformation(text):
@@ -54,10 +51,9 @@ def transformation(text):
 
 
 def predict(data):
-    model, tfidf = load_model()
+    pipeline = load_model()
     data = transformation(data)
-    data = tfidf.transform([data])
-    prediction = model.predict(data)
-    probability = model.predict_proba(data)
+    prediction = pipeline.predict([data])
+    probability = pipeline.predict_proba([data])
     probability = np.ravel(probability)
     return prediction, probability
