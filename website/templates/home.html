@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}
+       Home
+{% endblock title %}
+{% block content %}
+       <div class="row text-center">
+              <div>
+                     <h1>Email/SMS Spam Classifier</h1>
+              </div>
+              {% if outputs %}
+                     <div class="card text-center">
+                            <div class="card-body">
+                                   <h3 class="card-title">{{ outputs[0] }}</h3>
+                                   <p class="card-text">{{ outputs[1] }}</p>
+                                   <a href="/home" class="btn btn-primary">Try Again</a>
+                            </div>
+                     </div>
+              {% endif %}
+              <div class="image-container">
+                     <img width="300"
+                          height="200"
+                          class="img-fluid"
+                          src="{{ url_for('static', filename='images/letter-8195496_1280.jpg') }}"
+                          alt="chatbot_img">
+              </div>
+              <form method="POST">
+                     <!-- Add select box (dropdown) for an example -->
+                     <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Enter your text</label>
+                            <textarea class="form-control"
+                                      id="exampleFormControlTextarea1"
+                                      name="text"
+                                      rows="3"></textarea>
+                     </div>
+                     <br>
+                     <div align="center">
+                            <button type="submit" class="btn btn-primary">Predict</button>
+                     </div>
+              </div>
+       </form>
+</div>
+{% endblock content %}
