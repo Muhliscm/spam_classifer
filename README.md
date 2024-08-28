@@ -100,9 +100,9 @@ We can observe that the dataset is unbalanced.
 
 <h2>Getting Started</h2>
 
-1.[RawData](https://github.com/Muhliscm/spam_classifer/spam.csv) <br>
-2.[Exploratory Data Analysis scripts](https://github.com/Muhliscm/spam_classifer/01_EDA.ipynb)<br>
-3.[Machine learning model building scripts](https://github.com/Muhliscm/spam_classifer/01_Model_building.ipynb)<br>
+1.[RawData](https://github.com/Muhliscm/spam_classifer/blob/main/spam.csv) <br>
+2.[Exploratory Data Analysis scripts](https://github.com/Muhliscm/spam_classifer/blob/main/01_EDA.ipynb)<br>
+3.[Machine learning model building scripts](https://github.com/Muhliscm/spam_classifer/blob/main/01_Model_building.ipynb)<br>
 
 
 <h2>💻 Algorithms used</h2>
