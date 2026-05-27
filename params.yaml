@@ -1,0 +1,12 @@
+# params.yaml
+data_ingestion:
+  test_size: 0.25
+
+feature_engineering:
+  max_features: 3000
+  ngram_range:
+    - 1
+    - 2
+
+model_training:
+  nb_alpha: 1.0 # Smoothing parameter for Naive Bayes

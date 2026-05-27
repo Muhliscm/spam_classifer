@@ -5,3 +5,6 @@ pandas
 scikit-learn
 dagshub
 mlflow
+python-dotenv
+
+-e .
