@@ -151,6 +151,35 @@ This project focuses on finding spam messages
  
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+🚀 MLOps & Deployment Pipeline
+
+This project follows an end-to-end MLOps workflow for model tracking, pipeline automation, containerization, cloud deployment, and monitoring.
+
+🔧 Tools & Technologies Used
+MLFlow + DagsHub → Experiment tracking & model versioning
+DVC → Data and pipeline version control
+AWS S3 → Remote storage for datasets and artifacts
+GitHub Actions → CI/CD automation
+Docker → Application containerization
+AWS ECR → Docker image registry
+AWS EKS (Kubernetes) → Scalable deployment environment
+Flask → Model serving API
+Prometheus & Grafana → Monitoring and visualization
+⚙️ Pipeline Workflow
+Data ingestion and preprocessing pipeline created using DVC
+Model experiments tracked using MLFlow integrated with DagsHub
+Trained model artifacts stored in AWS S3
+CI pipeline configured using GitHub Actions for testing and deployment
+Application containerized using Docker
+Docker image pushed to AWS ECR
+Deployment automated on AWS EKS Kubernetes cluster
+Monitoring setup using Prometheus and Grafana for application metrics and observability
+📦 Deployment Architecture
+
+GitHub → GitHub Actions → Docker → AWS ECR → AWS EKS → Flask Application → Monitoring Stack
+
+Based on the project workflow and deployment setup described in the project documentation.
+
 <!-- CREDITS -->
 <h2 id="credits"> :scroll: Credits</h2>
 
