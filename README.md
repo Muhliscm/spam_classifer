@@ -3,7 +3,7 @@
 <h1 align="center"> Email/SMS Spam Classifier</h1>
 
 <p align="center"> 
-<img src="website/static/images/letter-8195496_1280.jpg" height="600px" width="900px">
+<img src="flask_app/static/images/letter-8195496_1280.jpg" height="600px" width="900px">
 </p>
 
 ## [App Link](http://3.90.173.204:8080/home)
