@@ -1,6 +1,9 @@
 logs/
 local_data/
 *.pkl
+data/
+reports/
+models/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

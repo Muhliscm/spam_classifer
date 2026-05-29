@@ -1,0 +1,9 @@
+# Build AND tag the image
+services:
+  spam_classifier:
+    build: .                      # build from Dockerfile
+    image: spam_classifier        # tag it with this name
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env    # ← loads all variables from .env

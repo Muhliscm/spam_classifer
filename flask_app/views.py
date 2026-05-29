@@ -1,6 +1,5 @@
 from flask import Blueprint, render_template, request, flash
-import pandas as pd
-from .utils import predict
+from .predict import predict
 
 
 views = Blueprint('views', __name__)
